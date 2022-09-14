@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: check the machine date
+      shell: date
+    - name: print hello world
+      debug:
+        msg: 'hello world'
